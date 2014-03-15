@@ -9543,7 +9543,7 @@ th.hide-for-touch {
 @media only screen and (min-width: 40.063em) {
   /* line 55, ../scss/app.scss */
   .background {
-    background: url("/images/bg.png");
+    background: url("../images/bg.png");
     background-repeat: no-repeat;
     width: 28%;
     height: 100%;

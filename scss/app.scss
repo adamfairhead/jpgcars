@@ -54,7 +54,7 @@
 
 .background {
   @media #{$medium-up} {
-    background: url("/images/bg.png");
+    background: url("../images/bg.png");
     background-repeat: no-repeat;
     width: 28%;
     height: 100%;
