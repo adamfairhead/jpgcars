@@ -38,3 +38,122 @@
 //   "foundation/components/type",
 //   "foundation/components/offcanvas",
 //   "foundation/components/visibility";
+
+.logo {
+  background: $secondary-color;
+  width: 90px;
+  height: 70px;
+  text-indent: -999em;
+}
+
+.logo-large {
+  top: 20px;
+  position: fixed;
+  left: 20px;
+}
+
+.background {
+  @media #{$medium-up} {
+    background: url("/images/bg.png");
+    background-repeat: no-repeat;
+    width: 28%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+  }
+}
+
+.main {
+  background: #fff;
+  position: relative;
+  margin-bottom: 40px;
+}
+
+.inline-list a,
+a h3 {
+  margin-right: 20px;
+  color: #222;
+  border-bottom: 2px solid $primary-color;
+  display: inline-block;
+
+  &:hover {
+    border-bottom: 2px solid $secondary-color;
+  }
+}
+
+h1 {
+  color: #4e4e4e;
+
+  strong {
+    color: #000;
+  }
+}
+
+nav {
+  @media #{$medium-up} {
+    margin-top: 25px;
+    margin-bottom: 100px;
+  }
+}
+
+.cta {
+  margin-top: 20px;
+
+  @media #{$medium-up} {
+    margin-top: 40px;
+  }
+}
+
+.cta span {
+  @media #{$small-only} {
+    display: none;
+  }
+
+  @media #{$medium-up} {
+    margin: 0 15px;
+  }
+}
+
+.button {
+  padding: 13px 20px 15px;
+
+  @media #{$small-only} {
+    padding-left: 0;
+    padding-right: 0;
+    width: 100%;
+  }
+}
+
+.button.secondary {
+  color: #4f4e3d;
+
+  &:hover {
+    color: #4f4e3d;
+  }
+}
+
+hr {
+  border-width: 2px;
+  border-color: #ededed;
+  margin: 3em 0 3.5em;
+}
+
+a img:hover {
+  opacity: .7;
+}
+
+.primary-links {
+
+  @media #{$small-only} {
+    .show-for-small {
+      margin-top: 8px;
+    }
+
+    margin-top: -8px;
+  }
+
+  strong {
+    color: $primary-color;
+  }
+}
