@@ -1,4 +1,4 @@
-baseurl: /jpgcars/
+baseurl: /
 permalink: pretty
 markdown: rdiscount
 exclude: [bower.json, config.rb, README.md, scss]
@@ -16,7 +16,12 @@ prose:
       - name: "title"
         field:
           element: "text"
-          label: "Title (e.g. 'Ford Fiesta 2010')"
+          label: "Car Registration"
+          value: ""
+      - name: "header"
+        field:
+          element: "text"
+          label: "Car Name (e.g. 'Ford Focus 2010')"
           value: ""
       - name: "price"
         field:

@@ -2,6 +2,7 @@
 layout: car
 published: true
 title: Registration 1
+header: Ford Focus 2010
 price: £7495
 "car-image-1": "http://farm5.staticflickr.com/4117/4818250446_7ee6e062cd_o.jpg"
 "car-image-2": "http://farm5.staticflickr.com/4117/4818250446_7ee6e062cd_o.jpg"

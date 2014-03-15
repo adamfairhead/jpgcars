@@ -1,5 +1,21 @@
 ---
 layout: default
 ---
+{% if page.header %}<h1>{{ page.header }} <span class="subheader">{{ page.title }}</span></h1>{% endif %}
 
 {{ content }}
+
+{% if page.price %}<strong>{{ page.price }}</strong>{% endif %}
+
+<ul class="car-images" data-orbit>
+  {% if page.car-image-1 %}<li><img src="{{ page.car-image-1 }}" alt="{{ page.title }}" /></li>{% endif %}
+  {% if page.car-image-2 %}<li><img src="{{ page.car-image-2 }}" alt="{{ page.title }}" /></li>{% endif %}
+  {% if page.car-image-3 %}<li><img src="{{ page.car-image-3 }}" alt="{{ page.title }}" /></li>{% endif %}
+  {% if page.car-image-4 %}<li><img src="{{ page.car-image-4 }}" alt="{{ page.title }}" /></li>{% endif %}
+  {% if page.car-image-5 %}<li><img src="{{ page.car-image-5 }}" alt="{{ page.title }}" /></li>{% endif %}
+  {% if page.car-image-6 %}<li><img src="{{ page.car-image-6 }}" alt="{{ page.title }}" /></li>{% endif %}
+  {% if page.car-image-7 %}<li><img src="{{ page.car-image-7 }}" alt="{{ page.title }}" /></li>{% endif %}
+  {% if page.car-image-8 %}<li><img src="{{ page.car-image-8 }}" alt="{{ page.title }}" /></li>{% endif %}
+  {% if page.car-image-9 %}<li><img src="}{{ page.car-image-9 }}" alt="{{ page.title }}" /></li>{% endif %}
+  {% if page.car-image-10 %}<li><img src="{{ page.car-image-10 }}" alt="{{ page.title }}" /></li>{% endif %}
+</ul>

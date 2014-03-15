@@ -9663,3 +9663,9 @@ a img:hover {
 .primary-links strong {
   color: red;
 }
+
+/* line 161, ../scss/app.scss */
+.car-images img {
+  width: 100%;
+  height: auto;
+}
