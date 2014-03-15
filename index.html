@@ -11,59 +11,32 @@ layout: default
 </header>
 
 <p class="cta">
-  <a class="button radius" href="#">Look at our cars for sale</a> <span>or</span>
-  <a class="button secondary radius" href="#">See what services we offer</a>
+  <a class="button radius" href="#sale">Look at our cars for sale</a> <span>or</span>
+  <a class="button secondary radius" href="#services">See what services we offer</a>
 </p>
 
 <hr />
 
-<h2>Latest cars for sale</h2>
+<h2 id="sale">Cars for sale</h2>
 
 <ul class="small-block-grid-1 medium-block-grid-2">
-  <li>
-    <a href="registration-1/">
-      <img src="http://placekitten.com/600/300/" alt="" />
-      <h3>Ford Focus 2010</h3>
-    </a>
-  </li>
 
+  {% for post in site.posts %}
   <li>
-    <a href="registration-1/">
-      <img src="http://placekitten.com/600/300/" alt="" />
-      <h3>Ford Focus 2010</h3>
+    <a href="{{ post.url }}">
+      <img src="{{ post.car-image-1 }}" alt="{{ post.title }}" />
+      <h3>{{ post.header }}</h3>
     </a>
   </li>
-
-  <li>
-    <a href="registration-1/">
-      <img src="http://placekitten.com/600/300/" alt="" />
-      <h3>Ford Focus 2010</h3>
-    </a>
-  </li>
-
-  <li>
-    <a href="registration-1/">
-      <img src="http://placekitten.com/600/300/" alt="" />
-      <h3>Ford Focus 2010</h3>
-    </a>
-  </li>
-
-  <li>
-    <a href="registration-1/">
-      <img src="http://placekitten.com/600/300/" alt="" />
-      <h3>Ford Focus 2010</h3>
-    </a>
-  </li>
-
-  <li>
-    <a href="registration-1/">
-      <img src="http://placekitten.com/600/300/" alt="" />
-      <h3>Ford Focus 2010</h3>
-    </a>
-  </li>
+  {% endfor %}
 </ul>
 
 <p class="cta">
-  <a class="button radius" href="#">View more of our cars</a> <span>or</span>
-  <a class="button secondary radius" href="#">See what services we offer</a>
+  <a class="button radius" href="#directions">Come and see our cars for yourself</a> <span>or</span>
+  <a class="button secondary radius" href="#services">See what services we offer</a>
 </p>
+
+<hr />
+
+<h2 id="services">MOT &amp; Services</h2>
+<p>Let me know what services they offer so I can put them in this space. :)</p>
