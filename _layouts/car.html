@@ -3,14 +3,15 @@ layout: default
 ---
 {% if page.header %}<h1><strong>{{ page.header }}</strong> <span class="subheader">{{ page.price }}</span></h1>{% endif %}
 <br />
+
+<div class="hide-for-small">
 {{ content }}
 
 <p class="cta">
   <a class="button radius" href="#">Enquire about this car</a> <span>or</span>
   <a class="button secondary radius" href="#">See it yourself</a>
 </p>
-
-<a class="button radius show-for-small" href="#">Enquire about this car</a>
+</div>
 
 <ul class="car-images" data-orbit>
   {% if page.car-image-1 %}<li><img src="{{ page.car-image-1 }}" alt="{{ page.title }}" /></li>{% endif %}
@@ -24,3 +25,12 @@ layout: default
   {% if page.car-image-9 %}<li><img src="}{{ page.car-image-9 }}" alt="{{ page.title }}" /></li>{% endif %}
   {% if page.car-image-10 %}<li><img src="{{ page.car-image-10 }}" alt="{{ page.title }}" /></li>{% endif %}
 </ul>
+
+<div class="show-for-small">
+{{ content }}
+
+<p class="cta">
+  <a class="button radius" href="#">Enquire about this car</a> <span>or</span>
+  <a class="button secondary radius" href="#">See it yourself</a>
+</p>
+</div>
