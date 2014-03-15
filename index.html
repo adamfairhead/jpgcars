@@ -23,7 +23,7 @@ layout: default
 
   {% for post in site.posts %}
   <li>
-    <a href="{{ post.url }}">
+    <a href="{{ site.baseurl }}{{ post.url }}">
       <img src="{{ post.car-image-1 }}" alt="{{ post.title }}" />
       <h3>{{ post.header }}</h3>
     </a>
