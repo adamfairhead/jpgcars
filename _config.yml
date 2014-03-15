@@ -1,4 +1,90 @@
-baseurl: /
+baseurl: /jpgcars/
 permalink: pretty
 markdown: rdiscount
 exclude: [bower.json, config.rb, README.md, scss]
+permalink: /:title
+
+prose:
+  rooturl: '_posts'
+  siteurl: 'http://adamfairhead.com/jpgcars/'
+  metadata:
+    _posts:
+      - name: "layout"
+        field:
+          element: "hidden"
+          value: "car"
+      - name: "title"
+        field:
+          element: "text"
+          label: "Title (e.g. 'Ford Fiesta 2010')"
+          value: ""
+      - name: "price"
+        field:
+          element: "text"
+          label: "Price in GBP"
+          value: ""
+      - name: "car-image-1"
+        field:
+          element: "text"
+          label: "Car Image 1 URL"
+          value: ""
+      - name: "car-image-2"
+        field:
+          element: "text"
+          label: "Car Image 2 URL"
+          value: ""
+      - name: "car-image-3"
+        field:
+          element: "text"
+          label: "Car Image 3 URL"
+          value: ""
+      - name: "car-image-4"
+        field:
+          element: "text"
+          label: "Car Image 4 URL"
+          value: ""
+      - name: "car-image-5"
+        field:
+          element: "text"
+          label: "Car Image 5 URL"
+          value: ""
+      - name: "car-image-6"
+        field:
+          element: "text"
+          label: "Car Image 6 URL"
+          value: ""
+      - name: "car-image-7"
+        field:
+          element: "text"
+          label: "Car Image 7 URL"
+          value: ""
+      - name: "car-image-8"
+        field:
+          element: "text"
+          label: "Car Image 8 URL"
+          value: ""
+      - name: "car-image-9"
+        field:
+          element: "text"
+          label: "Car Image 9 URL"
+          value: ""
+      - name: "car-image-10"
+        field:
+          element: "text"
+          label: "Car Image 10 URL"
+          value: ""
+    _posts/static:
+      - name: "layout"
+        field:
+          element: "hidden"
+          value: "page"
+      - name: "title"
+        field:
+          element: "text"
+          label: "Title"
+          value: ""
+      - name: "permalink"
+        field:
+          element: "text"
+          label: "Permalink"
+          value: ""

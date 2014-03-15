@@ -1,0 +1,43 @@
+<!doctype html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JPG Cars</title>
+    <link rel="stylesheet" href="{{ site.baseurl }}stylesheets/app.css" />
+    <script src="{{ site.baseurl }}bower_components/modernizr/modernizr.js"></script>
+  </head>
+  <body>
+
+    <a href="tel:1231231231" class="button large show-for-small">Tap to call JPG Cars</a>
+
+    <div class="background"></div>
+
+    <div class="row">
+      <div class="medium-3 columns hide-for-small">
+        <a class="logo logo-large" href="/">JPG Cars</a>
+      </div>
+
+      <div class="medium-9 columns main">
+        <nav class="primary-links">
+          <ul class="inline-list">
+            <li class="show-for-small"><a class="logo" href="/">JPG Cars</a></li>
+            <li><a href="#">Cars for sale</a></li>
+            <li><a href="#">MOT &amp; Services</a></li>
+            <li><a href="#">Directions</a></li>
+            <li class="hide-for-small"><strong>Call us 12345-678-901</strong></li>
+          </ul>
+        </nav>
+
+        <article>
+          {{ content }}
+        </article>
+
+      </div>
+    </div>
+
+    <script src="{{ site.baseurl }}bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="{{ site.baseurl }}{{ site.baseurl }}bower_components/foundation/js/foundation.min.js"></script>
+    <script src="{{ site.baseurl }}js/app.js"></script>
+  </body>
+</html>
