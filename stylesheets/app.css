@@ -9524,7 +9524,13 @@ th.hide-for-touch {
   display: table-cell !important;
 }
 
-/* line 42, ../scss/app.scss */
+@media only screen and (max-width: 40em) {
+  /* line 43, ../scss/app.scss */
+  h2, h3, h4, h5, h6 {
+    font-weight: bold;
+  }
+}
+/* line 48, ../scss/app.scss */
 .logo {
   background: #ffea00;
   width: 90px;
@@ -9532,7 +9538,7 @@ th.hide-for-touch {
   text-indent: -999em;
 }
 
-/* line 49, ../scss/app.scss */
+/* line 55, ../scss/app.scss */
 .logo-large {
   top: 20px;
   position: fixed;
@@ -9540,7 +9546,7 @@ th.hide-for-touch {
 }
 
 @media only screen and (min-width: 40.063em) {
-  /* line 55, ../scss/app.scss */
+  /* line 61, ../scss/app.scss */
   .background {
     background: url("../images/bg.png");
     background-repeat: no-repeat;
@@ -9552,14 +9558,14 @@ th.hide-for-touch {
   }
 }
 
-/* line 67, ../scss/app.scss */
+/* line 73, ../scss/app.scss */
 .main {
   background: #fff;
   position: relative;
   margin-bottom: 40px;
 }
 
-/* line 74, ../scss/app.scss */
+/* line 80, ../scss/app.scss */
 .inline-list a,
 a h3 {
   margin-right: 20px;
@@ -9567,60 +9573,60 @@ a h3 {
   border-bottom: 2px solid red;
   display: inline-block;
 }
-/* line 80, ../scss/app.scss */
+/* line 86, ../scss/app.scss */
 .inline-list a:hover,
 a h3:hover {
   border-bottom: 2px solid #ffea00;
 }
 
-/* line 85, ../scss/app.scss */
+/* line 91, ../scss/app.scss */
 h1 {
   color: #4e4e4e;
 }
-/* line 88, ../scss/app.scss */
+/* line 94, ../scss/app.scss */
 h1 strong {
   color: #000;
 }
 
 @media only screen and (min-width: 40.063em) {
-  /* line 93, ../scss/app.scss */
+  /* line 99, ../scss/app.scss */
   nav {
     margin-top: 25px;
     margin-bottom: 100px;
   }
 }
 
-/* line 100, ../scss/app.scss */
+/* line 106, ../scss/app.scss */
 .cta {
   margin-top: 20px;
 }
 @media only screen and (min-width: 40.063em) {
-  /* line 100, ../scss/app.scss */
+  /* line 106, ../scss/app.scss */
   .cta {
     margin-top: 40px;
   }
 }
 
 @media only screen and (max-width: 40em) {
-  /* line 108, ../scss/app.scss */
+  /* line 114, ../scss/app.scss */
   .cta span {
     display: none;
   }
 }
 @media only screen and (min-width: 40.063em) {
-  /* line 108, ../scss/app.scss */
+  /* line 114, ../scss/app.scss */
   .cta span {
     margin: 0 15px;
   }
 }
 
-/* line 118, ../scss/app.scss */
+/* line 124, ../scss/app.scss */
 .button {
   padding: 13px 20px 15px;
   -webkit-appearance: none;
 }
 @media only screen and (max-width: 40em) {
-  /* line 118, ../scss/app.scss */
+  /* line 124, ../scss/app.scss */
   .button {
     padding-left: 0;
     padding-right: 0;
@@ -9628,43 +9634,43 @@ h1 strong {
   }
 }
 
-/* line 129, ../scss/app.scss */
+/* line 135, ../scss/app.scss */
 .button.secondary {
   color: #4f4e3d;
 }
-/* line 132, ../scss/app.scss */
+/* line 138, ../scss/app.scss */
 .button.secondary:hover {
   color: #4f4e3d;
 }
 
-/* line 137, ../scss/app.scss */
+/* line 143, ../scss/app.scss */
 hr {
   border-width: 2px;
   border-color: #ededed;
   margin: 3em 0 3.5em;
 }
 
-/* line 143, ../scss/app.scss */
+/* line 149, ../scss/app.scss */
 a img:hover {
   opacity: .7;
 }
 
 @media only screen and (max-width: 40em) {
-  /* line 147, ../scss/app.scss */
+  /* line 153, ../scss/app.scss */
   .primary-links {
     margin-top: -8px;
   }
-  /* line 150, ../scss/app.scss */
+  /* line 156, ../scss/app.scss */
   .primary-links .show-for-small {
     margin-top: 8px;
   }
 }
-/* line 157, ../scss/app.scss */
+/* line 163, ../scss/app.scss */
 .primary-links strong {
   color: red;
 }
 
-/* line 162, ../scss/app.scss */
+/* line 168, ../scss/app.scss */
 .car-images img {
   width: 100%;
   height: auto;
