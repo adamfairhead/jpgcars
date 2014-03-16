@@ -1,15 +1,18 @@
 ---
 layout: default
+category: car
 ---
 
 {% if page.header %}<h1><strong>{{ page.header }}</strong> &nbsp; <span class="subheader">{{ page.price }}</span></h1>{% endif %}
-
-<div class="hide-for-small">
 <br />
+<div class="registration">{{ page.title }}</div>
+<br />
+<div class="hide-for-small">
+
 {{ content }}
 
 <p class="cta">
-  <a class="button radius" href="#">Enquire about this car</a> <span>or</span>
+  <a class="button radius" href="#enquire">Enquire about this car</a> <span>or</span>
   <a class="button secondary radius" href="{{ site.baseurl }}#sale">See more of our cars</a>
 </p>
 
@@ -36,3 +39,32 @@ layout: default
   <a class="button secondary radius" href="{{ site.baseurl }}#sale">See more of our cars</a>
 </p>
 </div>
+
+<hr />
+
+<h2 id="enquire">Enquire about this car</h2>
+<form class="wufoo" accept-charset="UTF-8" autocomplete="off" enctype="multipart/form-data" method="post" novalidate action="https://jpgcars.wufoo.com/forms/z164xrwd0ynevnd/#public">
+  <div id="foli4" class="notranslate vehicle hide">
+    <label class="desc" id="title4" for="Field4">Vehicle of Interest</label>
+    <input id="Field4" name="Field4" type="text" class="field text medium" value="" maxlength="255" tabindex="1" onkeyup="" />
+  </div>
+
+
+  <div id="foli3" class="notranslate contact">
+    <label class="desc" id="title3" for="Field3" >Give us your email address or phone number and we'll get in touch with you about this vehicle.</label>
+    <br />
+    <div class="row">
+      <div class="medium-6 columns">
+        <input id="Field3" name="Field3" type="text" class="field text medium" value="" maxlength="255" tabindex="2" onkeyup="" required placeholder="Type your email or phone number" />
+      </div>
+    </div>
+  </div>
+
+  <input id="saveForm" name="saveForm" class="button radius submit" type="submit" value="Submit enquiry" />
+
+  <div class="hide">
+    <label for="comment">Do Not Fill This Out</label>
+    <textarea name="comment" id="comment" rows="1" cols="1"></textarea>
+    <input type="hidden" id="idstamp" name="idstamp" value="YYPRnQECJABOiWtza9kzr531HgJGuhIEfzLMHYdYGrU=" />
+  </div>
+</form>
