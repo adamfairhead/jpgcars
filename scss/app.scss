@@ -117,6 +117,7 @@ nav {
 
 .button {
   padding: 13px 20px 15px;
+  -webkit-appearance: none;
 
   @media #{$small-only} {
     padding-left: 0;
