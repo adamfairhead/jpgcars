@@ -1,4 +1,4 @@
-baseurl: /jpgcars/
+baseurl: /jpgcars
 markdown: rdiscount
 exclude: [bower.json, config.rb, README.md, scss]
 permalink: /:title/
